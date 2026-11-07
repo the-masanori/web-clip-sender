@@ -8,6 +8,7 @@
 <h2>取り扱う情報と送信先</h2>
 <p>x.com の投稿を読み、投稿・動画・投稿者の ID、表示名、本文、動画情報をブラウザ内で処理します。関連動画の取得や利用者が選んだ操作のため、ログイン済み X セッションと認証用 CSRF 値を使い、必要な ID とリクエストを X に直接送信します。動画や画像、X の公開 JavaScript ファイルも X が配信するドメインから読み込みます。取得した JavaScript は API 情報の読み取りに使用し、コードとして実行しません。</p>
 <p>利用者データを本拡張機能の開発者のサーバーに送信しません。広告、追跡、データ販売、開発者による利用状況の収集は行いません。X に送信された情報には <a href="https://x.com/en/privacy">X のプライバシーポリシー</a>が適用されます。</p>
+<p>プレーヤー表示中のキー入力、スクロール、ボタン操作を再生・移動・ブロックなどの指示として処理します。これらの操作履歴を記録したり、開発者へ送信したりすることはありません。</p>
 <h2>保存と削除</h2>
 <p>ミュートと自動送りの設定をブラウザの拡張機能ローカルストレージに保存します。表示する投稿や動画の情報は動作中にブラウザのメモリで扱い、拡張機能のストレージには保存しません。拡張機能を削除すると設定も削除されます。X 上のブロックやブックマークなどの操作は X 側に残り、X の設定から管理できます。</p>
 <h2>権限</h2>
@@ -19,5 +20,6 @@
 <p lang="en">This extension displays related videos on X and, when the user requests it, likes or bookmarks a post or blocks the video author. Blocking is immediate and does not show a confirmation dialog.</p>
 <p lang="en">It reads posts on x.com and processes post, video and author identifiers, names, captions and video metadata in the browser. To fetch the feed or perform a user-requested action, it sends the necessary identifiers and requests directly to X using the user's existing X session and CSRF value. It loads video, images and X's public JavaScript files from X-operated domains. The JavaScript files are parsed for API information, not executed by the extension.</p>
 <p lang="en">No user data is sent to the extension developer's servers. There is no advertising, tracking, sale of user data or developer analytics. X handles its requests under its own <a href="https://x.com/en/privacy">privacy policy</a>.</p>
+<p lang="en">While the player is open, keyboard, scrolling and button input is processed to perform the requested player actions. This activity is not logged or sent to the developer.</p>
 <p lang="en">Mute and auto-next settings are kept in browser extension local storage and removed on uninstall. Feed data is held in memory while in use, not saved in extension storage. Actions on X persist with X and can be managed through X. The extension uses storage for preferences, activeTab for the toolbar action and access to x.com/www.x.com to add its controls and provide the feed.</p>
 <p lang="en">For questions, contact the publisher using the contact information on the Chrome Web Store listing. This is an independent adaptation of <a href="https://github.com/THEYAKUZI/x-related-video-feed">Related Video Feed for X</a>, and is not an official product of X Corp. or the original developer.</p></body></html>
